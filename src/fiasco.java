@@ -1,4 +1,4 @@
-public class Fiasco1 {
+public class main {
     public static void main(String[] args) {
     //Tipos primitivos
         int idade = 22;
