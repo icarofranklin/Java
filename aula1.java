@@ -1,4 +1,6 @@
-public class main {
+
+
+public class aula1 {
     public static void main(String[] args) {
     //Tipos primitivos
         int idade = 22;
