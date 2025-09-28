@@ -1,3 +1,4 @@
+package Slide_01.Encapsulamento_Poligonos;
 
 /*Primeiro uso de encapsulamento em Java*/
 public final class Poligono {

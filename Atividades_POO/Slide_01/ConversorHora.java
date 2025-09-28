@@ -1,3 +1,4 @@
+package Slide_01;
 import java.util.Scanner;
 //importa a classe Scanner para leitura de dados
 public class ConversorHora {

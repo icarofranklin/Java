@@ -1,3 +1,4 @@
+package Slide_01;
 import java.util.Scanner; 
 //importa a classe Scanner para leitura de dados
 
@@ -21,6 +22,13 @@ public class AlunoMedia {
 
         System.out.println("A média do aluno é: " + media);
         //6 - Exibe a média calculada
+
+        if (media >= 7) {
+            System.out.println("Aluno aprovado!");
+        } else {
+            System.out.println("Aluno reprovado.");
+        }
+        // Exibe se o aluno foi aprovado ou reprovado com base na média
 
         leitor.close(); 
         //7 - Fecha o leitor para liberar recursos(boa prática)
