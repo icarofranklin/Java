@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CalculadoraDiagonais {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in); // no próximo código eu tento usar o try-with-resources.
-        
+
         // --- ENTRADA ---
         System.out.print("Digite o número de lados do polígono convexo: ");
         int ladosInformados = leitor.nextInt();

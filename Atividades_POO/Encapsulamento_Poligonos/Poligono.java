@@ -1,3 +1,4 @@
+
 /*Primeiro uso de encapsulamento em Java*/
 public final class Poligono {
         /* 1. ATRIBUTO PRIVADO
