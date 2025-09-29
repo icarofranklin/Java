@@ -1,4 +1,4 @@
-package Slide_01.Encapsulamento_Poligonos;
+
 import java.util.Scanner;
 
 public class CalculadoraDiagonais {
