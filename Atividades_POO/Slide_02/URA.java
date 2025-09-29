@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class URA { // Menu de Atendimento Interativo
     // Uso de Switch-Case
+    // não está no slide
     public static void main(String[] args) {
         try (Scanner leitor = new Scanner(System.in)){
             int opcao; // Variável para armazenar a opção escolhida pelo usuário
