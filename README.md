@@ -31,36 +31,6 @@ Uma lista dos principais algoritmos que você encontrará neste repositório:
 
 ---
 
-## ⚙️ Como Executar um dos Projetos
-
-Para executar qualquer um dos arquivos `.java` localmente, siga os passos abaixo:
-
-1.  **Pré-requisito:** Certifique-se de ter o **Java Development Kit (JDK)** instalado em sua máquina.
-
-2.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/icarofranklin/Java.git](https://github.com/icarofranklin/Java.git)
-    ```
-
-3.  **Navegue até a pasta do repositório:**
-    ```bash
-    cd Java
-    ```
-
-4.  **Compile o arquivo Java desejado:**
-    ```bash
-    javac NomeDoArquivo.java
-    ```
-    *(Substitua `NomeDoArquivo.java` pelo nome do algoritmo que deseja executar, ex: `CalculadoraIMC.java`)*
-
-5.  **Execute o programa compilado:**
-    ```bash
-    java NomeDoArquivo
-    ```
-    *(Use o nome da classe sem a extensão `.java`)*
-
----
-
 ## 📫 Contato
 
 Vamos nos conectar!
