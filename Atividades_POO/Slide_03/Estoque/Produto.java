@@ -1,44 +1,51 @@
-// ARQUIVO: Produto.java
 public class Produto {
-    private String nomeDoProduto;
-    private int quantidadeEmEstoque;
+    private String nome;
+    private int quantidadeEstoque;
 
-    // Construtor: Cria o objeto com os dados iniciais.
-    public Produto(String nomeDoProduto, int quantidadeEmEstoque) {
-        this.nomeDoProduto = nomeDoProduto;
-        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    public Produto(String nome, int quantidadeEstoqueInicial) {
+        this.nome = nome;
+        if (quantidadeEstoqueInicial >= 0) {
+            this.quantidadeEstoque = quantidadeEstoqueInicial;
+        } else {
+            this.quantidadeEstoque = 0;
+            System.out.println("A quantidade inicial em estoque não pode ser negativa. O estoque foi iniciado com 0.");
+        }
     }
 
-    // Adiciona uma quantidade ao estoque.
-    public void adicionarProduto(int quantidade) {
-        if (quantidade > 0) { // Uma pequena validação extra
-            this.quantidadeEmEstoque += quantidade;
-            System.out.println(quantidade + " unidades de '" + this.nomeDoProduto + "' adicionadas ao estoque.");
+    public String getNome() {
+        return nome;
+    }
+
+    public int getQuantidadeEstoque() {
+        return quantidadeEstoque;
+    }
+
+    public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidadeEstoque += quantidade;
+            System.out.println(quantidade + " unidade(s) do produto '" + nome + "' foram adicionadas ao estoque.");
         } else {
             System.out.println("A quantidade a ser adicionada deve ser positiva.");
         }
     }
 
-    // Remove uma quantidade do estoque, se possível.
-    public void removerProduto(int quantidade) {
-        if (quantidade <= 0) {
-            System.out.println("A quantidade a ser removida deve ser positiva.");
-            return;
-        }
-        
-        if (quantidade > this.quantidadeEmEstoque) {
-            System.out.println("Falha na remoção: Quantidade insuficiente em estoque.");
+    public void removerEstoque(int quantidade) {
+        if (quantidade > 0) {
+            if (this.quantidadeEstoque >= quantidade) {
+                this.quantidadeEstoque -= quantidade;
+                System.out.println(quantidade + " unidade(s) do produto '" + nome + "' foram removidas do estoque.");
+            } else {
+                System.out.println("Não há estoque suficiente do produto '" + nome + "' para remover a quantidade solicitada.");
+            }
         } else {
-            this.quantidadeEmEstoque -= quantidade;
-            System.out.println(quantidade + " unidades de '" + this.nomeDoProduto + "' removidas do estoque.");
+            System.out.println("A quantidade a ser removida deve ser positiva.");
         }
     }
-    
-    // MÉTODO NOVO: Exibe o estado atual do produto.
+
     public void exibirInformacoes() {
-        System.out.println("------------------------------------");
-        System.out.println("Produto: " + this.nomeDoProduto);
-        System.out.println("Quantidade em Estoque: " + this.quantidadeEmEstoque);
-        System.out.println("------------------------------------");
+        System.out.println("\n--- Informações do Produto ---");
+        System.out.println("Nome: " + nome);
+        System.out.println("Quantidade em Estoque: " + quantidadeEstoque);
+        System.out.println("----------------------------\n");
     }
 }
