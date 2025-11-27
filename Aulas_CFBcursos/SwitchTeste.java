@@ -1,7 +1,7 @@
 public class SwitchTeste {
     public static void main(String[] args) {
         // Estrutura Switch em Java
-        int pos=1; // posição no pódio
+        int pos=8; // posição no pódio
 
         switch(pos){
             case 1 -> System.out.println("Primeiro lugar, o mior"); 
