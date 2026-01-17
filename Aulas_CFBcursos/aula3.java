@@ -2,9 +2,9 @@ public class aula3 {
     public static void main (String[] args){
         // Estruturas condicionais em Java
         // if, else if, else
-        // ==, !=, <, >, <=, >= (true or false)
+        // ==, !=, <, >, <=, >=, ! (true or false) são operadores relacionais
         
-        int nota=70;
+        int nota=50;
         int faltas =0;
         int maxfaltas=5;
         int media=60;

@@ -8,7 +8,7 @@ public class aula1 {
         //Por que ocupa muita memória
     // Tipos não primitivos
         String nome = "Ícaro Franklin";
-    //E qual a diferença dos dois? Os não primitivos permitem mais alterações
+    //E qual a diferença dos dois? Os não primitivos permitem mais alterações, já os primitivos são mais rápidos e ocupam menos memória
         System.out.println("Idade: " + idade);
         System.out.println("Altura: " + altura);
         System.out.println("Letra: " + letra);

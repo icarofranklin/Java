@@ -1,13 +1,15 @@
 public class SwitchTeste {
     public static void main(String[] args) {
         // Estrutura Switch em Java
-        int pos=8; // posição no pódio
+        // continuação da aula3.java
+
+        int pos=1; // posição no pódio
 
         switch(pos){
-            case 1 -> System.out.println("Primeiro lugar, o mior"); 
+            case 1 -> System.out.println("Primeiro lugar, o mior, siiiiiiir"); 
             case 2 -> System.out.println("Segundo lugar");
             case 3 -> System.out.println("Terceiro lugar");
-            case 4, 5, 6 -> System.out.println("Premiação de participação");
+            case 4, 5, 6 -> System.out.println("Premiação de participação, para não voltar de mãos vazias");
             default -> System.out.println("Não está no pódio\nPress F to pay respects");
             // break não é necessário com a sintaxe "->"
         }

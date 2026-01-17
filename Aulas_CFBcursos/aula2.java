@@ -6,9 +6,9 @@ public class aula2 {
         int n3 = 30;
         int soma = n1 + n2 + n3;
 
-        int idade = 20; // variável do tipo inteiro
+        int idade = 22; // variável do tipo inteiro
         String nome = "Ícaro Franklin"; // variável do tipo string
-        float altura = 1.80f; // variável do tipo float
+        float altura = 1.80f; // variável do tipo float e o f indica que é float
         double peso = 70.5; // variável do tipo double
         char sexo = 'M'; // variável do tipo char
         boolean estudante = true; // variável do tipo boolean
@@ -23,7 +23,7 @@ public class aula2 {
         System.out.println("A soma é: " + soma);
         
         System.out.println("\n");
-        System.out.println("Curso do canal CFBCursos, o cara que faz os cursos gratuitos");
+        System.out.println("Estou aprendendo Java através do Curso do canal CFBCursos");
         // Println com quebra de linha automática
         System.out.print("Curso de Java\n");
         // ou pode ser usado \n
