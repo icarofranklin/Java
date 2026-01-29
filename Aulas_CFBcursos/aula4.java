@@ -21,9 +21,9 @@ public class aula4 {
         System.out.println("Digite digite a quarta nota: ");
         n4=scan.nextInt();
         soma=n1+n2+n3+n4;
-        if (soma >= 60) {
+        if (soma >= 40) {
             res="Aprovado";
-        } else if (soma >= 40){
+        } else if (soma >= 30){
             res="Recuperação";
         } else {
             res="Reprovado";
