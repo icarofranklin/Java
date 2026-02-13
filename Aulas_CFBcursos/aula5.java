@@ -31,7 +31,7 @@ public class aula5 {
             do { 
                 System.out.println(cont + " - Ícaro Franklin");
                 cont++; //incremento
-            } while (cont < 6); //condição
+            } while (cont <= 0); //condição
         System.out.println("Fim do Programa");
     }
 }
